@@ -1,0 +1,136 @@
+/* Importando uma fonte com estilo de xilogravura */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+body {
+    background-color: #f4e8d8; /* Cor de areia */
+    font-family: 'Special Elite', monospace; /* Fonte que remete a algo manual */
+    color: #1c1c1c; /* Cor preta para o texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho total */
+}
+
+.container {
+    border: 5px solid #1c1c1c; /* Borda preta grossa interna */
+    padding: 30px;
+    max-width: 500px;
+    width: 100%; /* Ocupa a largura total do border-frame */
+    background-color: #fffaf0; /* Um branco levemente amarelado */
+    box-sizing: border-box;
+    background-color: #fffaf0; /* Um branco levemente amarelado */
+    border: 3px solid #1c1c1c;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Sombra mais suave */
+    
+    /* Para centralizar o container dentro do body */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cover-art {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border: 3px solid #1c1c1c; /* Borda preta na capa */
+}
+
+.player-placeholder {
+    background-color: #ddd;
+    height: 50px; /* Altura temporária para o player */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+    color: #555;
+    border: 2px solid #1c1c1c;
+}
+
+.social-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espaço entre os botões */
+    margin-bottom: 30px;
+}
+
+.action-button {
+    background-color: #1c1c1c;
+    color: #f4e8d8;
+    border: 2px solid #1c1c1c;
+    padding: 10px 15px;
+    font-family: 'Special Elite', monospace;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /* NOVO: Limita a largura dos botões de ação */
+    max-width: 180px; /* Largura máxima para cada botão de ação */
+    width: 100%; /* Ocupa 100% da largura disponível até o max-width */
+    justify-content: center; /* Centraliza o conteúdo dentro do botão */
+    text-decoration: none; /* NOVO: Remove a sublinha */
+}
+
+.action-button:hover {
+    background-color: #f4e8d8;
+    color: #1c1c1c;
+    transform: scale(1.05);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+}
+
+.release-date {
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.links {
+    /* NOVO: Para centralizar os botões de link */
+    display: flex;
+    flex-direction: column; /* Faz com que os links fiquem em coluna */
+    align-items: center; /* Centraliza os itens na coluna */
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    border: 2px solid #1c1c1c;
+    transition: all 0.3s ease;
+    gap: 10px;
+    /* NOVO: Largura máxima para os botões de link */
+    max-width: 400px; /* Largura máxima para os botões de link */
+    width: 100%; /* Ocupa 100% da largura disponível até o max-width */
+}
+
+/* Cores da paleta para os botões */
+.links a:nth-child(1) { background-color: #006D77; color: #f4e8d8;} /* Spotify - Azul petróleo */
+.links a:nth-child(2) { background-color: #E29578; color: #1c1c1c;} /* Apple Music - Laranja queimado */
+.links a:nth-child(3) { background-color: #83C5BE; color: #1c1c1c;} /* Deezer - Verde água */
+.links a:nth-child(4) { background-color: #EDF6F9; color: #1c1c1c; } /* YouTube - Quase branco */
+.links a:nth-child(5) { background-color: #FFDDD2; color: #1c1c1c; } /* Amazon Music - Salmão claro */
+
+.links a:hover {
+    background-color: #1c1c1c;
+    color: #f4e8d8;
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
