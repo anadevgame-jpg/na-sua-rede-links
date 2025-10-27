@@ -126,11 +126,14 @@ h2 {
 .links a:nth-child(1) { background-color: #006D77; color: #f4e8d8;} /* Spotify - Azul petróleo */
 .links a:nth-child(2) { background-color: #E29578; color: #1c1c1c;} /* Apple Music - Laranja queimado */
 .links a:nth-child(3) { background-color: #83C5BE; color: #1c1c1c;} /* Deezer - Verde água */
-.links a:nth-child(4) { background-color: #EDF6F9; color: #1c1c1c; } /* YouTube - Quase branco */
-.links a:nth-child(5) { background-color: #FFDDD2; color: #1c1c1c; } /* Amazon Music - Salmão claro */
+.links a:nth-child(4) { background-color: #FFDDD2; color: #1c1c1c; } /* Amazon Music - Salmão claro */
+.links a:nth-child(5) { background-color: #EDF6F9; color: #1c1c1c; } /* YouTube - Quase branco */
+.links a:nth-child(6) { background-color: #FFDDD2; color: #1c1c1c; } /* Youtube Music - Salmão claro */
+
 
 .links a:hover {
     background-color: #1c1c1c;
     color: #f4e8d8;
     transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+
 }
